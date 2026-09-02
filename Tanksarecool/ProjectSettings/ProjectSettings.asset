@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 00000000000000000000000000000000
+  productGUID: 883cb672a3b35c04481a0ec29b609149
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -961,7 +961,7 @@ PlayerSettings:
   cloudProjectId: 73c0be4c-56fe-4c4f-9aa1-e0dac6f82202
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: QA-Pack-1 2026-01-14_20-55-28
+  projectName: Tanksarecool
   organizationId: unity_736659
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
