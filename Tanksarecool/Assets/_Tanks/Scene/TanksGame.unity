@@ -210,7 +210,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 600472797}
   m_LocalEulerAnglesHint: {x: 33.188, y: -0.928, z: 0}
 --- !u!114 &36648819
 MonoBehaviour:
@@ -256,6 +256,67 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &299976725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7235201204822767114, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
+  m_PrefabInstance: {fileID: 4915146469241074890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &600472796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600472797}
+  - component: {fileID: 600472798}
+  m_Layer: 0
+  m_Name: CameraRig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600472797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600472796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 36648818}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &600472798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600472796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e26b621854da943aeca10c9a73880c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.CameraControl
+  m_DampTime: 0.2
+  m_ScreenEdgeBuffer: 18
+  m_MinSize: 4
+  m_Targets:
+  - {fileID: 299976725}
+  - {fileID: 770805233}
+--- !u!4 &770805233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7235201204822767114, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
+  m_PrefabInstance: {fileID: 1424098626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &832551396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -470,24 +531,28 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2678898499648865157, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
+      propertyPath: m_PlayerNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2678898499648865157, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: m_MovementAudio
       value: 
       objectReference: {fileID: 1424098627}
     - target: {fileID: 4363036743556746051, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: lengthInSec
-      value: 0.15
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4363036743556746051, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: lengthInSec
-      value: 0.15
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
@@ -495,7 +560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148271789319850976, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: m_Name
-      value: Tank (1)
+      value: Tank 2
       objectReference: {fileID: 0}
     - target: {fileID: 7235201204822767114, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -565,19 +630,19 @@ PrefabInstance:
       objectReference: {fileID: 1152910637}
     - target: {fileID: 4363036743556746051, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: lengthInSec
-      value: 0.15
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4363036743556746051, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: lengthInSec
-      value: 0.15
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 5091011702324259085, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
@@ -585,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148271789319850976, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: m_Name
-      value: Tank
+      value: Tank 1
       objectReference: {fileID: 0}
     - target: {fileID: 7235201204822767114, guid: 254ea856e5f212943be3e0d56903376a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -636,8 +701,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 36648818}
   - {fileID: 1001378132}
   - {fileID: 832551396}
   - {fileID: 4915146469241074890}
   - {fileID: 1424098626}
+  - {fileID: 600472797}
