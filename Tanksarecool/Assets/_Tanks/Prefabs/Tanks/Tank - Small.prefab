@@ -371,15 +371,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankMovement
-  m_PlayerNumber: 2
-  m_Speed: 6
-  m_TurnSpeed: 120
+  m_PlayerNumber: 4
+  m_Speed: 20
+  m_TurnSpeed: 180
   m_IsDirectControl: 0
   m_MovementAudio: {fileID: 401488137207807928}
   m_EngineIdling: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_EngineDriving: {fileID: 8300000, guid: d7ca9fb5aa30155449192b23d7fb3336, type: 3}
   m_PitchRange: 0.2
-  m_IsComputerControlled: 1
+  m_IsComputerControlled: 0
   m_InputUser: {fileID: 0}
 --- !u!114 &4864867878388513435
 MonoBehaviour:

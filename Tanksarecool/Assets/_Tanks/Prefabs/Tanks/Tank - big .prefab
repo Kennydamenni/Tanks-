@@ -11048,7 +11048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankMovement
-  m_PlayerNumber: 2
+  m_PlayerNumber: 4
   m_Speed: 20
   m_TurnSpeed: 180
   m_IsDirectControl: 0
@@ -11056,7 +11056,7 @@ MonoBehaviour:
   m_EngineIdling: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_EngineDriving: {fileID: 8300000, guid: d7ca9fb5aa30155449192b23d7fb3336, type: 3}
   m_PitchRange: 0.2
-  m_IsComputerControlled: 1
+  m_IsComputerControlled: 0
   m_InputUser: {fileID: 0}
 --- !u!114 &536124799560454436
 MonoBehaviour:
@@ -11080,7 +11080,7 @@ MonoBehaviour:
   m_MaxLaunchForce: 30
   m_MaxChargeTime: 0.75
   m_ShotCooldown: 1
-  m_MaxDamage: 80
+  m_MaxDamage: 100
   m_ExplosionForce: 150
   m_ExplosionRadius: 6
   m_InputUser: {fileID: 0}
@@ -11096,7 +11096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030896d0325fa3e4d8d7d4cfe2351cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankHealth
-  m_StartingHealth: 100
+  m_StartingHealth: 200
   m_Slider: {fileID: 8777863443378207352}
   m_FillImage: {fileID: 286432733485988724}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}

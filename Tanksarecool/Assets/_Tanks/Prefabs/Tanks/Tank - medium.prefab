@@ -10416,7 +10416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankMovement
-  m_PlayerNumber: 2
+  m_PlayerNumber: 4
   m_Speed: 20
   m_TurnSpeed: 180
   m_IsDirectControl: 0
@@ -10448,7 +10448,7 @@ MonoBehaviour:
   m_MaxLaunchForce: 30
   m_MaxChargeTime: 0.75
   m_ShotCooldown: 1
-  m_MaxDamage: 80
+  m_MaxDamage: 100
   m_ExplosionForce: 150
   m_ExplosionRadius: 6
   m_InputUser: {fileID: 0}
@@ -10464,7 +10464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030896d0325fa3e4d8d7d4cfe2351cb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tanks.Complete.TankHealth
-  m_StartingHealth: 100
+  m_StartingHealth: 200
   m_Slider: {fileID: 4734175617672664137}
   m_FillImage: {fileID: 1372875915631540965}
   m_FullHealthColor: {r: 0, g: 1, b: 0, a: 1}
